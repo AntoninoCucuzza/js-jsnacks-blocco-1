@@ -8,7 +8,7 @@ se è dispari inseriscilo nell’array.
 
 */
 
-const array = []
+const listaDispari = []
 
 for (let i = 0; i < 6; i++) {
    
@@ -17,10 +17,10 @@ for (let i = 0; i < 6; i++) {
     if (userN % 2 == 0) {
        
     } else {
-        array.push(userN)
+        listaDispari.push(userN);
     }
 
 }
 
-console.log(array);
+console.log(listaDispari);
 
