@@ -24,10 +24,10 @@ while (i < 2) {
 const parolaUno = listaParole[0]
 const parolaDue = listaParole[1]
 
-if (parolaUno < parolaDue) {
-    console.log( `la ${parolaUno} ha meno caratteri della parola ${parolaDue}`);
-} else if (parolaUno == parolaDue ){
+if (parolaUno.length < parolaDue.length) {
+    console.log( `la ${parolaUno}(la prima parola inserita) ha meno caratteri della parola ${parolaDue} (la seconda parola inserita)`);
+} else if (parolaUno.length == parolaDue.length ){
     console.log('le due parole hanno lo stesso numero di caratteri');
 }else{
-    console.log(`la parola ${parolaDue} ha mneno caratteri della parola ${parolaUno}`);
+    console.log(`la parola ${parolaDue} (la seconda parola inserita) ha mneno caratteri della parola ${parolaUno} (la prima parola inserita)`);
 }
