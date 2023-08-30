@@ -12,17 +12,20 @@ i = 0
 listaN = []
 while (i < 2) {
     const userN = prompt ('inserisci un numero')
+
     listaN.push(userN)
 
-    const pc = userN[i - 1]
-
-    const numero = listaN[i];
-
-    if(numero[i] > pc ){
-        console.log('il primo nummero e piu alto ');
-    }else{
-        console.log('il secondo numero e piu alto ');
-    }
-
     i++
+}
+
+const numeroUno = listaN[0] 
+
+const numeroDue = listaN[1]
+
+if (numeroUno < numeroDue) {
+    console.log(`${numeroUno} < ${numeroDue}`);
+} else if (numeroUno == numeroDue ){
+    console.log('sono uguali');
+}else if( numeroUno > numeroDue){
+    console.log(`${numeroUno} > ${numeroDue}`);
 }
